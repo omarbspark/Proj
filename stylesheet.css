@@ -14,13 +14,16 @@ nav ul {
 }
 
 nav ul li {
- display: inline-block; 
+  display: inline-block; 
   margin-left: 20px;
   margin-right: 20px;
 }
 
-ul {
-  line-height: 2;
+aside {
+  display: inline-block;
+  padding: 20px; 
+  margin: 10px; 
+  position: absolute;
 }
 
 body,html {
