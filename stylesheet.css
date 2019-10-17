@@ -1,1 +1,28 @@
+header {
+  padding: 30px 30px 25px 30px;
+  text-align: center;
+  margin-bottom: 0px;
+}
 
+nav {
+  margin-top: 0px;
+  padding: 10px;
+}
+
+nav ul {
+  list-stype-type: none;
+}
+
+nav ul li {
+ display: inline-block; 
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+ul {
+  line-height: 2;
+}
+
+body,html {
+ margin: 0; 
+}
