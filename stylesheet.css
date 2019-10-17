@@ -26,6 +26,12 @@ aside {
   position: absolute;
 }
 
+article {
+  display: inline-block; 
+  padding: 20px; 
+  margin: 10px; 
+}
+
 body,html {
  margin: 0; 
 }
