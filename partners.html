@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<script src="jquery-3.4.1.min.js"></script>
 	<title>Enter Grocery Name Here</title>
-	<style>
+	<style media="screen" type="text/css">
+		#logo {
+			width: 50px;
+			float: left;
+			margin-left: 30px;
+		}
+		nav ul li a {
+			text-decoration: none;
+			color: #000000;
+		}
 		li {
 			list-style-type: none;
 			line-height: 2;
@@ -29,11 +39,14 @@
 		<h1>Enter Grocery Name Here</title>
 	</header>
 	<nav>
-		<ul>
-			<li><a href="#">Products</a></li>
-			<li><a href="partners.html">Partners</a></li>
+		<img src="cart.png" alt="" id="logo">
+		<ul style="float: right;">
+			<li><a href="#">News</a></li>
+			<li><a href="product.html">Products & Service</a></li>
+			<li><a href="partners.html">Partner Stores & University</a></li>
 			<li><a href="careers.html">Careers</a></li>
-			<li><a href="#">Etc...</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="contact.html">Contact</a></li>
 		</ul>
 	</nav>
 	<article>
@@ -65,7 +78,7 @@
 		<img src="https://storage.needpix.com/rsynced_images/retail-1424043_1280.jpg" />
 	</article>
 	<footer>
-		<p>Footer content here</p>
+		<p>2019 Company Name. All Rights Reserved. Check our <a href="privacy.html">Privacy Policy</a></p>
 	</footer>
 </body>
 </html>
