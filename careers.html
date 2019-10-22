@@ -103,6 +103,7 @@
 		<br/>
 	</article>
 	<article>
+		<center>
 		<h3>Apply now</h3>
 		<p>Apply for one of our positions using the form below:</p>
 		<form action="">
@@ -126,7 +127,9 @@
 			</select> 
 			<br/>
 		</form> 
+		<br/>
 		<button onclick="submitForm()">Submit</button> 
+		</center>
 	</article>
 	<footer>
 		<p>2019 Company Name. All Rights Reserved. Check our <a href="privacy.html">Privacy Policy</a></p>
@@ -137,9 +140,10 @@
 			var contact = document.forms[0].elements[2].value;
 			var select = document.getElementById("positions");
 			var position = select.options[select.selectedIndex].text;
-			console.log(name);
-			console.log(contact);
-			console.log(position);
+			document.forms[0].elements[0].value = "";
+			document.forms[0].elements[1].value = "";
+			document.forms[0].elements[2].value = "";
+			window.alert("Submitted!");
 		}
 	</script>
 </body>
