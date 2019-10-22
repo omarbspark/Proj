@@ -9,14 +9,12 @@ nav {
   margin-top: 20px;
   padding: 10px;
   text-decoration: none;
-  background-color: #d9f4c7;
   /* display: inline-block; */
 }
 
 nav ul {
   list-style-type: none;
   float: right;
-  background-color: #d9f4c7;
 }
 
 nav ul li {
