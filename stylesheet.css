@@ -62,10 +62,27 @@ footer {
   /* color: white; */
   /* text-align: center; */
   font-size: 10px;
+  background-color: #d9f4c7;
 }
 
 body,html {
  margin: 0;
  font-family: 'Roboto Mono',sans-serif;
 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #003559;
+}
+
+p {
+  color: #514b56;
+}
+
+a {
+  color: #003559;
+}
+
+a:hover {
+  color: #f72c25;
 }
