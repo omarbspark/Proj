@@ -137,9 +137,10 @@
 			var contact = document.forms[0].elements[2].value;
 			var select = document.getElementById("positions");
 			var position = select.options[select.selectedIndex].text;
-			console.log(name);
-			console.log(contact);
-			console.log(position);
+			document.forms[0].elements[0].value = "";
+			document.forms[0].elements[1].value = "";
+			document.forms[0].elements[2].value = "";
+			window.alert("Submitted!");
 		}
 	</script>
 </body>
