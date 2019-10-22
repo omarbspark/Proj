@@ -46,8 +46,7 @@
 		<h2>Careers</h2>
 		<p>Join our team today!</p>
 		<p>A career at [enter name here] is a very rewarding experience! Join us for benefits such as flexible hours, employee discounts, and top-of-the-line insurance plans!</p>
-		<p>View our open positions listed below.</p>
-		<p>Send in your resume today!</p>
+		<p>View our open positions listed and apply below.</p>
 	</article>
 	<article style="width:25%; display:inline-block; vertical-align: top;">
 		<h3>Full-time Positions</h3>
@@ -103,8 +102,45 @@
 		</table>
 		<br/>
 	</article>
+	<article>
+		<h3>Apply now</h3>
+		<p>Apply for one of our positions using the form below:</p>
+		<form action="">
+  			First name:<br/>
+  			<input type="text" name="firstname" id="firstname">
+  			<br/>
+  			Last name:<br/>
+  			<input type="text" name="lastname" id="lastname">
+  			<br/>
+			Contact Info (email/phone):<br/>
+  			<input type="text" name="contact" id="contact">
+  			<br/>
+			Please select the position you're applying for:<br/>
+			<select name="positions" id="positions">
+  				<option value="groceryManager">Grocery Manager</option>
+  				<option value="cateringManager">Catering Manager</option>
+  				<option value="deliClerk">Deli Clerk</option>
+  				<option value="seafoodClerk">Seafood Clerk</option>
+				<option value="cashier">Cashier</option>
+  				<option value="snowShoveler">Snow Shoveler</option>
+			</select> 
+			<br/>
+		</form> 
+		<button onclick="submitForm()">Submit</button> 
+	</article>
 	<footer>
 		<p>2019 Company Name. All Rights Reserved. Check our <a href="privacy.html">Privacy Policy</a></p>
 	</footer>
+	<script>
+		function submitForm() {
+			var name = document.forms[0].elements[0].value + " " + document.forms[0].elements[1].value;
+			var contact = document.forms[0].elements[2].value;
+			var select = document.getElementById("positions");
+			var position = select.options[select.selectedIndex].text;
+			console.log(name);
+			console.log(contact);
+			console.log(position);
+		}
+	</script>
 </body>
 </html>
