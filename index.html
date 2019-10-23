@@ -4,38 +4,71 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<script src="jquery-3.4.1.min.js"></script>
-	<title>Grocery Shopping</title>
+	<title>Home - Market To The Go</title>
 
 	<style media="screen" type="text/css">
-		body {
-			/* background-image: url('grocery.png');
-			background-repeat: no-repeat; */
-		}
-		#logo {
-			width: 50px;
-			float: left;
-			margin-left: 30px;
-		}
+	button {
+		background-color: #8fdc97; /* Green */
+		border: none;
+		color: white;
+		padding: 15px 6px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 13px;
+		transition: 0.2s;
+		width: 10%;
+		min-width: 50px;
+		font-family: 'Roboto Mono',sans-serif;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 
-		nav ul li a {
-			text-decoration: none;
-			color: #000000;
-			padding: 10px 10px;
-			font-size: 13px;
-		}
+	button:hover {
+		/* background-color: #8fdc97; */
+		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+		background-color: #f72c25;
+	}
 
-			nav ul li a:hover {
-				background-color: #8fdc97;
-				transition: 0.3s;
-				font-weight: bold;
-			}
+	#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+	z-index: -1;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #ffffff;
+	padding: 10px 10px;
+	font-size: 13px;
+}
+
+	nav ul li a:hover {
+		background-color: #8fdc97;
+		color: #000000;
+		transition: 0.2s;
+		font-weight: bold;
+		/* box-shadow: */
+	}
+ footer {
+	 background-color: transparent;
+ }
 	</style>
 </head>
 <body>
 
+	<video autoplay muted loop id="myVideo">
+  	<source src="FoodPack1_10_Videvo.mov">
+	</video>
+
 	<nav>
-		<img src="cart.png" alt="" id="logo">
-		<ul style="float: right;">
+		<a href="index.html"><img src="logo.png" alt="" id="logo"></a>
+
+
+		<ul>
 			<li><a href="news.html">News</a></li>
 			<li><a href="product.html">Products & Service</a></li>
 			<li><a href="partners.html">Partner Stores & University</a></li>
@@ -45,14 +78,16 @@
 		</ul>
 	</nav>
 
-	<header style="margin-top: 170px;">
-		<h1>Enter Grocery Name Here</title>
+	<header style="margin-top: 160px;">
+		<h1 style="font-weight: 4000;color: #ffffff;">WE BRING THE GROCERY TO YOU</title>
 	</header>
 
+	<div class="" style="text-align: center;">
+		<button type="button" name="button">What we offer</button>
+		<button type="button" name="button">Order Now</button>
+	</div>
 
-	<article>
-		<p>---- We bring the supermarket to you.</p>
-	</article>
+
 	<!-- <aside>
 		<h3>Our aside</h3>
 	</aside> -->
@@ -63,7 +98,7 @@
 		<p>2019 Company Name. All Rights Reserved. Check our <a href="privacy.html">Privacy Policy</a></p>
 	</footer>
 
-	<img src="grocery.png" style="position: absolute; z-index: -1; bottom: 0; left: 300px; max-height: 40%;">
+	<!-- <img src="grocery.png" style="position: absolute; z-index: -1; bottom: 0; left: 300px; max-height: 40%;"> -->
 
 
 
