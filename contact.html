@@ -1,48 +1,126 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<script src="jquery-3.4.1.min.js"></script>
-	<title>Grocery Shopping</title>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Contact</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link href="swapimagesonhover.css" rel="stylesheet" type="text/css"/>
+        <script src="swapimagesonhover.js" type="text/javascript"></script>
+   
+        <style media="screen" type="text/css">
 
-	<style media="screen" type="text/css">
-		#logo {
-			width: 50px;
-			float: left;
-			margin-left: 30px;
-		}
-		nav ul li a {
-			text-decoration: none;
-			color: #000000;
-		}
-	</style>
-</head>
-<body>
+        body {
+            color: white;
+            background-image: url("lettuce.jpg");
+            background-color: #aeb4a9;
+            background-repeat: repeat-x;
+        }
 
-	<nav>
-		<img src="cart.png" alt="" id="logo">
-		<ul style="float: right;">
-			<li><a href="news.html">News</a></li>
-			<li><a href="product.html">Products & Service</a></li>
-			<li><a href="partners.html">Partner Stores & University</a></li>
-			<li><a href="careers.html">Careers</a></li>
-			<li><a href="about.html">About Us</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</nav>
+        h1{
+            font-style: italic;
+            text-align: center;
+            padding-left: 500px;
+            font-size: 3em;
+        }
+        h2{
+            text-align: center;
+            font-style: italic;
+        }
 
-	<article>
-		
-	</article>
-  
-	<!-- <aside>
-		//Optional aside
-	</aside> -->
+        #info{
+            text-align: center;
+            padding-left:500px;
+            font-size: 1.2em;
+        }
 
-	<footer>
-		<p>2019 Company Name. All Rights Reserved. Check our <a href="privacy.html">Privacy Policy</a></p>
-	</footer>
+        #logo {
+            width: 50px;
+            float: left;
+            margin-left: 30px;
+        }
 
+        #middle{
+            padding-top: 200px;
+             text-align: center; 
+            font-size: .7em;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000000;
+        }
+
+        li {
+            list-style-type: none;
+            line-height: 2;
+        }
+        article {
+            left: 100;
+            display: inline-block;
+            width: 60%;
+            text-align: center;
+            padding: 20px;
+            vertical-align: top;
+        }
+
+    </style>
+
+
+    </head>
+
+    <body>
+        <nav>
+        <img src="cart.png" alt="" id="logo">
+        <ul style="float: right;">
+            <li><a href="news.html">News</a></li>
+            <li><a href="product.html">Products & Service</a></li>
+            <li><a href="partners.html">Partner Stores & University</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+<div class = "big_container">
+    <article>
+        <h1> Our Team</h1>
+        <section style="padding: 3em 0;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <a href="product1.html">
+                                <img src="c1.jpg" data-img="c2.jpg" class="swim img-responsive"/>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="product2.html">
+                                <img src="o1.jpg" data-img="o2.jpg" class="swim img-responsive"/>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="product3.html">
+                                <img src="r1.jpg" data-img="r2.jpg" class="swim img-responsive"/>
+                            </a>
+                        </div>
+                        <div class="col-sm-3">
+                            <a href="product3.html">
+                                <img src="e1.jpg" data-img="e2.jpg" class="swim img-responsive"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </article>
+    <article id = "info">
+    <div id = "middle">
+         <h2>Contact Us</h2>
+                 <p> Phone Number: 978-831-3336 </p>
+                 <p> Email: MarketMail@Market.com </p>
+        <h2>Our Locations</h2>
+                 <p> Somervile, MA • Medford, MA • Berkeley, CA • Claremont, CA </p>
+    </article>
+</div>
+</div>   
 </body>
 </html>
