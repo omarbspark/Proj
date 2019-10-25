@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product & Service</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous">
+    </script>
+    <style media="screen">
+
+      footer {
+        background-color: transparent;
+      }
+
+      button {
+        background-color: #8fdc97; /* Green */
+        border: none;
+        color: #003559;
+        padding: 15px 6px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 1000;
+        transition: 0.4s;
+        width: 20%;
+        min-width: 50px;
+        font-family: 'Roboto Mono',sans-serif;
+        /* margin-left: 10px; */
+        /* margin-right: 10px; */
+        margin-top: 40px;
+      }
+
+      button:hover {
+        /* background-color: #8fdc97; */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+        background-color: #f72c25;
+        color: #ffffff;
+        /* width: 12%; */
+      }
+
+      .order {
+        margin-top: 100px;
+        text-align: center;
+      }
+
+
+
+      .orderForm input[type=text] {
+        padding: 7px;
+        margin-top: 10px;
+        background-color: #d9f4c7;
+        width: 15%;
+        border: none;
+        /* border-bottom: 2px  */
+        transition: 0.2s;
+        border-radius: 10px
+
+      }
+
+      .orderForm input[type=text]:focus {
+        border: none;
+        /* box-shadow: 5px 5px; */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+        outline: none;
+      }
+
+      .orderForm select {
+        background-color: #d9f4c7;
+        border: none;
+        padding: 10px;
+      }
+
+      .orderForm label {
+        /* margin-right: 40px; */
+        /* width: 300px; */
+        width:15%;
+        height: 30px; display:inline-block;
+      }
+
+
+
+
+    </style>
+
+
+  </head>
+
+  <body>
+
+
+      <nav>
+        <a href="index.html"><img src="logo.png" alt="" id="logo"></a>
+        <ul style="float: right;">
+          <li><a href="news.html">News</a></li>
+          <li><a href="product.html" >Product & Service</a></li>
+          <li><a href="partners.html">Partner Stores & University</a></li>
+          <li><a href="careers.html">Careers</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="order" >
+        <h1>Place Your Order Now</h1>
+        <p>Please Enter your information correctly</p>
+
+          <form class="orderForm">
+            <label for="">First Name: </label>
+            <input type="text" name="firstName" value="" > <br>
+            <label for="">Last Name: </label>
+            <input type="text" name="lastName" value="" > <br>
+            <label for="">Phone: </label>
+            <input type="text" name="phoneNum" value=""> <br>
+            <label for="">Email: </label>
+            <input type="text" name="email" value="" > <br>
+            <label for="">Address: </label>
+            <input type="text" name="address" value="" >
+          </form>
+
+        <button type="button" name="submitButton" id="submitButton">Sumbmit</button>
+
+
+      </div>
+
+
+      <script type="text/javascript" language="javascript">
+        $("input").hover(function () {
+          $(this).css("background-color","#8fdc97");
+        },function(){
+          $(this).css("background-color","#d9f4c7");
+        });
+
+        
+
+
+
+      </script>
+
+
+
+
+
+
+    <footer>
+  		<p>&copy;2019 Market To The Go. All Rights Reserved. Check our <a href="privacy.html">Privacy Policy</a></p>
+  	</footer>
+
+  </body>
+</html>
