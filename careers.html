@@ -26,6 +26,54 @@
 			text-align: left;
 			padding: 5px 30px 5px 30px;
 		}
+		button {
+        		background-color: #8fdc97;
+        		border: none;
+        		color: #003559;
+        		padding: 15px 6px;
+        		text-align: center;
+        		text-decoration: none;
+        		display: inline-block;
+        		font-size: 13px;
+        		font-weight: 1000;
+        		transition: 0.4s;
+        		width: 20%;
+        		min-width: 50px;
+        		font-family: 'Roboto Mono',sans-serif;
+        		margin-top: 40px;
+      		}
+     		button:hover {
+       			box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+        		background-color: #f72c25;
+        		color: #ffffff;
+      		}
+      		.application {
+        		margin-top: 100px;
+        		text-align: center;
+      		}
+      		.appForm input[type=text] {
+        		padding: 7px;
+        		margin-top: 10px;
+        		background-color: #d9f4c7;
+        		width: 15%;
+        		border: none;
+        		transition: 0.2s;
+        		border-radius: 10px
+      		}
+      		.appForm input[type=text]:focus {
+        		border: none;
+        		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+        		outline: none;
+      		}
+      		.appForm select {
+        		background-color: #d9f4c7;
+        		border: none;
+        		padding: 10px;
+      		}
+      		.appForm label {
+        		width:15%;
+        		height: 30px; display:inline-block;
+      		}
 	</style>
 </head>
 <body>
@@ -106,17 +154,18 @@
 		<center>
 		<h3>Apply now</h3>
 		<p>Apply for one of our positions using the form below:</p>
-		<form action="">
-  			First name:<br/>
+		<div class="application">
+		<form action="" class="appForm" id="appForm">
+  			<label for="">First Name: </label>
   			<input type="text" name="firstname" id="firstname">
   			<br/>
-  			Last name:<br/>
+  			<label for="">Last Name: </label>
   			<input type="text" name="lastname" id="lastname">
   			<br/>
-			Contact Info (email/phone):<br/>
+			<label for="">Contact Info: </label>
   			<input type="text" name="contact" id="contact">
   			<br/>
-			Please select the position you're applying for:<br/>
+			<label for="">Select the position you're applying for: </label>
 			<select name="positions" id="positions">
   				<option value="groceryManager">Grocery Manager</option>
   				<option value="cateringManager">Catering Manager</option>
@@ -128,24 +177,34 @@
 			<br/>
 		</form> 
 		<br/>
-		<button onclick="submitForm()">Submit</button> 
+		<button onclick="submitForm()" id="submitButton">Submit</button> 
 		</center>
 		<br/>
+		</div>
 	</article>
 	<footer>
 		<p>2019 Company Name. All Rights Reserved. Check our <a href="privacy.html">Privacy Policy</a></p>
 	</footer>
 	<script>
-		function submitForm() {
-			var name = document.forms[0].elements[0].value + " " + document.forms[0].elements[1].value;
-			var contact = document.forms[0].elements[2].value;
-			var select = document.getElementById("positions");
-			var position = select.options[select.selectedIndex].text;
+		$("input").hover(function() {
+          		$(this).css("background-color","#8fdc97");
+        	},function(){
+          		$(this).css("background-color","#d9f4c7");
+        	});
+        	function submitForm() {
+          		if (document.getElementById("appForm").elements.namedItem("firstname").value == "" ||
+              		document.getElementById("appForm").elements.namedItem("lastname").value == "" ||
+              		document.getElementById("appForm").elements.namedItem("contact").value == "" ||
+              		document.getElementById("theForm").elements.namedItem("positions").value == "") {
+              		alert("Please fill out all the information.");
+            	} else {
+              		$("#appForm").after("<p>Thank you for submitting your application!</p>");
+              		$("#submitButton").css("display","none");
 			document.forms[0].elements[0].value = "";
 			document.forms[0].elements[1].value = "";
 			document.forms[0].elements[2].value = "";
-			window.alert("Submitted!");
-		}
+            	}
+        }
 	</script>
 </body>
 </html>
