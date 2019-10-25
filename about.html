@@ -1,107 +1,140 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<script src="jquery-3.4.1.min.js"></script>
-	<title>Grocery Shopping</title>
-
-	<style media="screen" type="text/css">
-
-		#bgImg {
-     		   position: fixed;
-      		  left: 0;
-      		  bottom: 0;
-       		 width: 40%;
-      		  height: 100%;
-      		  z-index: -1;
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product & Service</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous">
+    </script>
+    <style media="screen">
+      /* nav ul li a {
+        text-decoration: none;
+        color: #000000;
+      } */
+      .container {
+        display: flex;
+      }
+      .main_container {
+        /* width: 90%; */
+        /* display: block; */
+        /* text-align: center; */
+        /* position: absolute; */
+        margin-top: 50px;
+        /* margin-left: 100px; */
+        margin-left: 45%;
+        margin-right: 10%;
+      }
+      .product_container {
+        width: 35%;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        /* margin: 15px 20px; */
+      }
+      .text p{
+        /* margin-left: 20px; */
+        font-size: 0.8em;
+      }
+      #bgImg {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 40%;
+        height: 100%;
+        z-index: -1;
         /* filter:brightness(80%); */
-                       }
-		
-		  .container {
-			  display: flex;
-       			 /* width: 90%; */
-      			  /* display: block; */
-      			  /* text-align: center; */
-      			  /* position: absolute; */
-      			  margin-top: 50px;
-      			  /* margin-left: 100px; */
-     			   margin-left: 45%;
-     			   margin-right: 10%;
-    			  }
-		
-		body {
-			color:#8fdc97!important;
-  			background-image: url("about.jpg");
-  			background-repeat: repeat-x;
-		}
+      }
+      footer {
+        background-color: transparent;
+      }
+      button {
+        background-color: #8fdc97; /* Green */
+        border: none;
+        color: #003559;
+        padding: 15px 6px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 1000;
+        transition: 0.4s;
+        width: 20%;
+        min-width: 50px;
+        font-family: 'Roboto Mono',sans-serif;
+        /* margin-left: 10px; */
+        margin-right: 10px;
+      }
+      button:hover {
+        /* background-color: #8fdc97; */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+        background-color: #f72c25;
+        color: #ffffff;
+        /* width: 12%; */
+      }
+    </style>
 
-		#logo {
-			width: 50px;
-			float: left;
-			margin-left: 30px;
-		}
-		nav ul li a {
-			text-decoration: none;
-			color: #000000;
-		}
+  </head>
 
-		li {
-			list-style-type: none;
-			line-height: 2;
-		}
-		article {
-			display: inline-block;
-			width: 60%;
-			margin-left: 45%
-			text-align: left;
-			padding: 20px;
-			vertical-align: top;
-		}
+  <body>
+
+<img src="aboutreference.jpg" alt="" id="bgImg">
+     <nav>
+    <a href="index.html"><img src="logo.png" alt="" id="logo"></a>
+    <ul style="float: right;">
+      <li><a href="news.html">News</a></li>
+      <li><a href="product.html">Products & Service</a></li>
+      <li><a href="partners.html">Partner Stores & University</a></li>
+      <li><a href="careers.html">Careers</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>s
+
+    <br>
+    <br>
+
+    <div class="main_container">
+
+        <div class="container">
+          <!-- <div class="product_container">
+            <img src="grocery.png" alt="" style="width: 100%;">
+          </div> -->
+
+          <div class="text">
+            <h1>About Us</h1>
+            <p>Our company, <a href="index.html" style="text-decoration:none;"><span style="color: #8fdc97; font-weight: bold;">Market To The Go</span></a>, is a grocery store dedicated to accesible, ethical, and affordable food access. We are proud to do provide the top products to students both on and off campus in order to promote healthy living for those who don't always feel like they have the time. 
+            </p>
+          </div>
+
+        </div>
+
+        <div class="container">
+          <!-- <div class="product_container">
+            <img src="grocery.png" alt="" style="width: 100%;">
+          </div> -->
+
+          <div class="text">
+            <h1>Our History</h1>
+            <p>We first opened in 1999 when Tufts University Undergrad Eregen Badlock found himself in quite the predicament. Caught in the crosshairr of his studies as a triple major, his passion for healthy produce, and his college budget, Eregen found himself struggling to keep up.
+            </p>
+            <p>
+              In an effort to find a way out of the challenges he found facing himself and his peers, Eregen decided to act. He collobrated with masters of produce, veterans of delivery, and students with their fingers to the pulse. Market to the Go is the brainchild of this collaboration. Since it's foundation, Market to the Go has grown into a multimillion dollar enterprise, spanning three cities and helping more five thousand students. We are proud of our past and even prouder of our future, as a team and as a company.
+            </p>
+            <center>
+            <img style="width: 70%;  padding-top: 5px; padding-bottom: 5px; padding-left: 10px; padding-right: 10px;" src="teamwork.jpg" />
+          </center>
+          </br>
+        </br>
+          </div>
+        </div>
+
+      </div>
 
 
-	</style>
-</head>
-<body>
+    <footer>
+  		<p>&copy;2019 Market To The Go. All Rights Reserved. Check our <a href="privacy.html">Privacy Policy</a></p>
+  	</footer>
 
-		<img src="aboutreference.jpg" alt="" id="bgImg">
-	<nav>
-		<a href="index.html"><img src="logo.png" alt="" id="logo"></a>
-		<ul style="float: right;">
-			<li><a href="news.html">News</a></li>
-			<li><a href="product.html">Products & Service</a></li>
-			<li><a href="partners.html">Partner Stores & University</a></li>
-			<li><a href="careers.html">Careers</a></li>
-			<li><a href="about.html">About Us</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</nav>
-	<div class="container">
-	<article id = "sm_con">
-		<center>
-		<h2>About Us</h2>
-		<p>Market to the Go is a grocery store dedicated to accesible, ethical, and affordable food access. We are proud to do provide the top products to students both on and off campus in order to promote healthy living for those who don't always feel like they have the time. </p>
-		<p>We first opened in 1999 when Tufts University Undergrad Eregen Badlock found himself in quite the predicament. Caught in the crosshairr of his studies as a triple major, his passion for healthy produce, and his college budget, Eregen found himself struggling to keep up.</p>
-		<p> In an effort to find a way out of the challenges he found facing himself and his peers, Eregen decided to act. He collobrated with masters of produce, veterans of delivery, and students with their fingers to the pulse. Market to the Go is the brainchild of this collaboration. Since it's foundation, Market to the Go has grown into a multimillion dollar enterprise, spanning three cities and helping more five thousand students. We are proud of our past and even prouder of our future, as a team and as a company.
-		</p>
-		<img style="width: 70%; border: 1px solid; padding-top: 5px; padding-bottom: 5px; padding-left: 10px; padding-right: 10px; box-shadow: 5px 10px;" src="teamwork.jpg" />
-		</center>
-	</article>
-	
-	<article id = "sm_ con" style="width:20%">
-		<h3>Our Projects</h3>
-		<h4>Charity Work</h4>
-      		<p> We are proud to announce a project we've been working on in callobaration with the boston food pantry of Dorchester. IHUHOUHOUH text text text.
-      		</p>
-		<h4> Pending Locations</h4>
-			<p> We are attempting to open a new location in Chelsea, Ma. It is currently under construction. text text text .
-      		</p>
-      		<img style="width: 150%; padding-top: 5px; padding-bottom: 5px; padding-left: 10px; padding-right: 15px;" src = "new location.jpg" />
-	</article>
-	</div>
-
-	<footer>
-		<p>2019 Company Name. All Rights Reserved. Check our <a href="privacy.html">Privacy Policy</a></p>
-	</footer>
-</body>
+  </body>
 </html>
