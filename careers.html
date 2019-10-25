@@ -81,6 +81,15 @@
         		width:15%;
         		height: 30px; display:inline-block;
       		}
+		#jobs1 {
+      			opacity: 0.5;
+    		}
+		#jobs2 {
+      			opacity: 0.5;
+    		}
+		#jobs3 {
+      			opacity: 0.5;
+    		}
 	</style>
 </head>
 <body>
@@ -103,7 +112,7 @@
 		<p>A career at Market To The Go is a very rewarding experience! Join us for benefits such as flexible hours, employee discounts, and top-of-the-line insurance plans!</p>
 		<p>View our open positions listed and apply below.</p>
 	</article>
-	<article style="width:25%; display:inline-block; vertical-align: top;">
+	<article style="width:25%; display:inline-block; vertical-align: top;" id="jobs1">
 		<h3>Full-time Positions</h3>
 		<table>
 			<tr>
@@ -120,7 +129,7 @@
 			</tr>
 		</table>
 	</article>
-	<article style="width:25%; display:inline-block; vertical-align: top;">
+	<article style="width:25%; display:inline-block; vertical-align: top;" id="jobs2">
 		<h3>Part-time Positions</h3>
 		<table>
 			<tr>
@@ -137,7 +146,7 @@
 			</tr>
 		</table>
 	</article>
-	<article style="width:25%; display:inline-block; vertical-align: top;">
+	<article style="width:25%; display:inline-block; vertical-align: top;" id="jobs3">
 		<h3>Temporary/Seasonal Positions</h3>
 		<table>
 			<tr>
@@ -161,7 +170,7 @@
 		<center>
 		<h3>Apply now</h3>
 		<p>Apply for one of our positions using the form below:</p>
-		<div class="application">
+		<div class="application" id="application">
 		<form action="" class="appForm" id="appForm">
   			<label for="">First Name: </label>
   			<input type="text" name="firstname" id="firstname">
@@ -193,6 +202,18 @@
 		<p>2019 Company Name. All Rights Reserved. Check our <a href="privacy.html">Privacy Policy</a></p>
 	</footer>
 	<script>
+		$(document).ready(function(){
+   			$("#jobs1").animate({
+      				opacity: '1'
+    			});
+			$("#jobs2").animate({
+      				opacity: '1'
+    			});
+			$("#jobs3").animate({
+      				opacity: '1'
+    			});
+		});
+		
 		$("input").hover(function() {
           		$(this).css("background-color","#8fdc97");
         	},function(){
