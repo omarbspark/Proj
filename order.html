@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product & Service</title>
+    <title>Order</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"
             integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
@@ -76,10 +76,14 @@
       .orderForm label {
         /* margin-right: 40px; */
         /* width: 300px; */
-        width:15%;
+        width:20%;
         height: 30px; display:inline-block;
       }
 
+
+      .radio {
+        background-color: #d9f4c7;
+      }
 
 
 
@@ -117,10 +121,19 @@
             <label for="">Email: </label>
             <input type="text" name="email" > <br>
             <label for="">Address: </label>
-            <input type="text" name="address">
+            <input type="text" name="address"> <br>
+            <label for="">Bundle Selection: </label>
+            <div class="" style="">
+              <input type="radio" name="bundle" class="radio">Vegetable Bundle
+              <input type="radio" name="bundle" class="radio">Meat Bundle
+              <input type="radio" name="bundle" class="radio">Both Bundles
+            </div>
+
+
+
           </form>
 
-        <button type="button" name="submitButton" id="submitButton" onclick="formValidation()">Submit</button>
+        <button type="button" name="submitButton" id="submitButton" onclick="formValidation()">Sumbmit</button>
 
 
       </div>
