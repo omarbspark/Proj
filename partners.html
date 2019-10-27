@@ -7,6 +7,12 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<title>Our Partners</title>
 	<style media="screen" type="text/css">
+
+
+	      body {
+	        opacity: 0;
+	      }
+
 		nav ul li a {
 			text-decoration: none;
 			padding: 10px 10px;
@@ -31,7 +37,7 @@
 			background-color: rgba(255, 255, 255, 0.6);
 		}
 		ul li a {
-			text-decoration: none;	
+			text-decoration: none;
 		}
 		body {
   			background-image: url("partnersImage.png");
@@ -86,5 +92,15 @@
 	<footer>
 		<p>2019 Market To The Go. All Rights Reserved. Check our <a href="privacy.html">Privacy Policy</a></p>
 	</footer>
+
+	<script type="text/javascript" language="javascript">
+	$(document).ready(function(){
+			$("body").animate({
+						opacity: '1'
+				}, 1000);
+
+
+	});
+	</script>
 </body>
 </html>

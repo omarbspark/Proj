@@ -85,6 +85,10 @@
         /* width: 12%; */
       }
 
+      body {
+        opacity: 0;
+      }
+
 
 
     </style>
@@ -141,7 +145,7 @@
               <p style="width:300px;margin-right: 10px;"><span style="font-weight: bold;">VEGETABLE BUNDLE: </span>broccoli, tomato, potato, onion, mushroom, carrot</p>
               <img src="vegetable.jpg" style="max-width:100px; max-height:100px; width: auto; height: auto;">
             </div>
-            
+
             <div class="" style="display:flex; ">
               <p style="width:300px;margin-right: 10px;"><span style="font-weight: bold;">MEAT  BUNDLE: </span>beef, chicken, lamb, pork, turkey, fish (including salmon, tilapia, cod)</p>
               <img src="meat.jpg" style="max-width:100px; max-height:100px; width: auto; height: auto;">
@@ -161,6 +165,16 @@
     <footer>
   		<p>&copy;2019 Market To The Go. All Rights Reserved. Check our <a href="privacy.html">Privacy Policy</a></p>
   	</footer>
+
+    <script type="text/javascript" language="javascript">
+    $(document).ready(function(){
+        $("body").animate({
+              opacity: '1'
+          }, 1000);
+
+
+    });
+    </script>
 
   </body>
 </html>
