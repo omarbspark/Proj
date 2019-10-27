@@ -7,6 +7,7 @@
 **/
 
 .swim-container {
+    margin-left: 50px;
     display: block;
     position: relative;
 }
